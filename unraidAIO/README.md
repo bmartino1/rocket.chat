@@ -1,8 +1,10 @@
+Unofficial adaptation to include and install the MongoDB and rocket.chat applications in 1 container for use on the Unraid OS...
+
 # Rocket.Chat AIO (All-In-One)
 
 This repository provides an **all-in-one Docker image for Rocket.Chat** that bundles:
 
-- Rocket.Chat (latest stable build)
+- Rocket.Chat (latest stable build from there GitHub)
 - MongoDB Community Edition v8 (single-node replica set)
 - Node.js v22 (supported by Rocket.Chat 7.x)
 - npm v10
@@ -10,8 +12,7 @@ This repository provides an **all-in-one Docker image for Rocket.Chat** that bun
 - NATS v2.11
 - postfix(smtp)
 
-All Licensing is protected by the works of thrid parties MIT licesnes.
-No external MongoDB container is required. uses micro services to run rocket.chat all in 1 docker image
+All softwares Licensing is protected by there works of third parties MIT licenses. No external MongoDB container is required. uses microservices to run rocket.chat all in 1 docker image.
 
 ---
 
@@ -45,8 +46,8 @@ You will be greeted by the Rocket.Chat setup wizard.
 - Uses the latest Rocket.Chat release
 - Runs MongoDB CE v8 locally inside the container
 - Automatically initializes a MongoDB replica set (rs01)
-- Starts Rocket.Chat only after required applciaitons are runing and MongoDB is ready
-- Uses a custom entrypoint to ensure correct startup order
+- Starts Rocket.Chat only after required applications are running and MongoDB is ready
+- Uses a custom entry point to ensure correct startup order
 - Fully compatible with Unraid, Docker bridge, and macvlan/ipvlan
 
 ## Example Runtime Output
